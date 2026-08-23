@@ -1887,3 +1887,22 @@ a.card-link:hover { text-decoration: underline; }
   .factbar .fact:nth-child(2) { border-right: none; }
   .factbar .fact:nth-child(1), .factbar .fact:nth-child(2) { border-bottom: 1px solid var(--line); }
 }
+
+/* ---------- College Showcase feature band (dark teal, recruiting focus) ---------- */
+.showcase-feature { background: var(--primary); color: rgba(255,255,255,0.9); }
+.showcase-inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 52px; align-items: center; }
+.showcase-feature .eyebrow { color: var(--accent); }
+.showcase-copy h2 { color: var(--white); margin-bottom: 0.5em; }
+.showcase-copy p { color: rgba(255,255,255,0.82); font-size: 1.06rem; line-height: 1.65; max-width: 54ch; }
+.showcase-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 1.7rem; }
+.showcase-feature .btn-primary { background: var(--accent); color: var(--primary); border-color: var(--accent); box-shadow: none; }
+.showcase-feature .btn-primary:hover { background: #ffbe4a; box-shadow: none; }
+.showcase-feature .btn-ghost { border-color: rgba(255,255,255,0.55); color: #fff; }
+.showcase-feature .btn-ghost:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
+.showcase-logos { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius); padding: 26px 28px; }
+.showcase-logos-label { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.72rem; font-weight: 700; color: var(--accent); margin: 0 0 1.1em; }
+.showcase-names { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 11px 18px; }
+.showcase-names li { color: #fff; font-weight: 600; font-size: 0.95rem; padding-left: 18px; position: relative; }
+.showcase-names li::before { content: ""; position: absolute; left: 0; top: 0.5em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+@media (max-width: 800px) { .showcase-inner { grid-template-columns: 1fr; gap: 30px; } }
+@media (max-width: 420px) { .showcase-names { grid-template-columns: 1fr; } }
