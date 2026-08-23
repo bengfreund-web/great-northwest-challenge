@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=1787442465">
+<link rel="stylesheet" href="css/styles.css?v=1787455678">
 <script>document.documentElement.className += " js";</script>
 </head>
 <body>
@@ -42,19 +42,39 @@
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="wordmark" href="#top">
+    <a class="wordmark" href="index.html">
       <img src="img/mi-logo.png" alt="Great Northwest Challenge">
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <nav class="site-nav" id="siteNav">
-      <a href="#basics">About</a>
-      <a href="#format">Format</a>
-      <a href="#divisions">Divisions</a>
-      <a href="#teams">Teams</a>
-      <a href="#resources">Plan Your Trip</a>
-      <a class="nav-cta" href="#interest">Team Interest</a>
+      <a href="index.html">Home</a>
+      <div class="nav-item">
+        <button class="nav-drop-toggle" aria-expanded="false">Tournament</button>
+        <div class="nav-drop">
+          <a href="team-interest.html">Team Interest</a>
+          <a href="confirmed-teams.html">Confirmed Teams</a>
+          <a href="payment.html">Payment Links</a>
+          <a href="college-recruiters.html">College Recruiters</a>
+          <a href="referee.html">Referee</a>
+          <a href="free-agent.html">Free Agent Players</a>
+          <a href="packet.html">Tournament Packet</a>
+        </div>
+      </div>
+      <a href="fixtures.html">Fixtures &amp; Results</a>
+      <a href="livestream.html">Livestream</a>
+      <div class="nav-item">
+        <button class="nav-drop-toggle" aria-expanded="false">Resources</button>
+        <div class="nav-drop">
+          <a href="venue.html">Venue</a>
+          <a href="transport.html">Ground Transportation</a>
+          <a href="age-bands.html">Player Age Bands</a>
+          <a href="tid-day.html">USA Rugby TiD Day</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <a class="nav-cta" href="team-interest.html">Team Interest</a>
     </nav>
   </div>
 </header>
@@ -121,6 +141,18 @@
           <span class="basic-value">Bozeman, MT</span>
           <span class="basic-note">Montana State University, grass and turf</span>
         </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section gateway-section">
+    <div class="wrap">
+      <div class="gateway-grid">
+        <a class="gateway reveal" href="team-interest.html"><h3>Bring a Team</h3><p>Compete in one of the top high school rugby showcase events in the USA.</p><span class="gateway-cue">Register interest &rarr;</span></a>
+        <a class="gateway reveal" href="college-recruiters.html"><h3>Recruit at GNC</h3><p>Connect with the best high school rugby talent from across the country.</p><span class="gateway-cue">College recruiters &rarr;</span></a>
+        <a class="gateway reveal" href="vendors.html"><h3>Vendors &amp; Partners</h3><p>Showcase your business, support youth rugby, and connect with teams, families and fans.</p><span class="gateway-cue">Get involved &rarr;</span></a>
+        <a class="gateway reveal" href="venue.html"><h3>Plan Your Weekend</h3><p>Find venue, lodging, travel and event information.</p><span class="gateway-cue">Plan your trip &rarr;</span></a>
       </div>
     </div>
   </section>
@@ -356,6 +388,19 @@
 
 </main>
 
+<section class="section section-alt">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="text-align:center;">What They Say</p>
+    <h2 class="reveal" style="text-align:center;">From the Recruiters</h2>
+    <div class="quote-grid">
+      <div class="quote-card reveal"><div class="quote-mark">&ldquo;</div><blockquote>Incredible talent, a well-run tournament, and an amazing experience overall. It was my first time attending the Great Northwest Challenge, and I can't wait to return next year!</blockquote><cite>Army West Point</cite></div>
+      <div class="quote-card reveal"><div class="quote-mark">&ldquo;</div><blockquote>This event needs to be the model for around the country. Doing this exact event in six or so regional locations would greatly improve the recruiting process for players as well as colleges.</blockquote><cite>Davenport University</cite></div>
+      <div class="quote-card reveal"><div class="quote-mark">&ldquo;</div><blockquote>The GNC showcased talented high school rugby players from places that are often off the beaten path, and the setting, in field quality and in views, was spectacular.</blockquote><cite>Long Island University</cite></div>
+      <div class="quote-card reveal"><div class="quote-mark">&ldquo;</div><blockquote>Well organized event that showcases talented players. This event is permanently on our recruiting calendar.</blockquote><cite>US Naval Academy</cite></div>
+    </div>
+  </div>
+</section>
+
 <section class="partners" aria-label="Partners">
   <div class="wrap">
     <p class="eyebrow partners-label reveal">Partners</p>
@@ -408,7 +453,7 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=1787442465"></script>
-<script src="js/hero-sequence.js?v=1787442465"></script>
+<script src="js/main.js?v=1787455678"></script>
+<script src="js/hero-sequence.js?v=1787455678"></script>
 </body>
 </html>
