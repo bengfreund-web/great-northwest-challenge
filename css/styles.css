@@ -140,21 +140,21 @@ p { margin: 0 0 1em; }
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .wordmark { display: flex; align-items: center; }
 
 .wordmark img {
-  height: 46px;
+  height: 58px;
   width: auto;
 }
 
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 22px;
 }
 
 .site-nav a {
@@ -168,7 +168,7 @@ p { margin: 0 0 1em; }
 .site-nav a.nav-cta {
   color: var(--white);
   background: var(--primary);
-  padding: 8px 16px;
+  padding: 9px 18px;
   border-radius: var(--radius);
   font-weight: 600;
 }
