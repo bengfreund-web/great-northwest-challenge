@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=1787774447b">
+<link rel="stylesheet" href="css/styles.css?v=1787774953b">
 <script>document.documentElement.className += " js";</script>
 </head>
 <body>
@@ -103,21 +103,64 @@
   <section class="section section-alt">
     <div class="wrap">
       <p class="eyebrow reveal">Recruiters</p>
-      <h2 class="reveal section-title-sm">Recent Confirmed College Recruiters</h2>
-      <div class="name-grid">
-        <div class="name-tile reveal">University of Rio Grande</div>
-        <div class="name-tile reveal">Alfred University</div>
-        <div class="name-tile reveal">Western Oregon University</div>
-        <div class="name-tile reveal">University of New England</div>
-        <div class="name-tile reveal">Princeton University</div>
-        <div class="name-tile reveal">University of Montana</div>
-        <div class="name-tile reveal">University of Washington</div>
-        <div class="name-tile reveal">Navy</div>
-        <div class="name-tile reveal">Guilford College</div>
-        <div class="name-tile reveal">Western Washington University</div>
-        <div class="name-tile reveal">Army West Point</div>
-        <div class="name-tile reveal">Lindenwood University</div>
-      </div>
+      <h2 class="reveal section-title-sm">Confirmed College Recruiters</h2>
+      <p class="lead-line reveal" style="max-width:760px;">Every confirmed college and university recruiter for 2026, mapped across the country. Hover or tap a marker for details.</p>
+      <div class="rmap-wrap reveal">
+  <div class="rmap" id="rmap">
+    <svg viewBox="0 0 960 560" class="rmap-svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path d="M 30.6 53.6 L 38.3 154.0 L 35.2 211.1 L 66.0 262.3 L 93.7 327.3 L 147.6 366.6 L 184.5 362.7 L 241.5 390.3 L 284.5 390.3 L 310.7 380.4 L 364.6 435.6 L 418.4 465.1 L 455.4 496.6 L 503.1 421.8 L 564.6 431.6 L 595.4 410.0 L 641.6 421.8 L 675.5 459.2 L 717.0 510.4 L 710.8 445.4 L 697.0 402.1 L 730.9 339.1 L 781.6 280.0 L 795.5 242.6 L 810.9 205.2 L 855.5 189.4 L 872.4 181.6 L 860.1 156.0 L 918.6 122.5 L 884.8 73.3 L 849.4 120.5 L 780.1 150.0 L 733.9 154.0 L 680.1 185.5 L 672.4 104.8 L 649.3 102.8 L 595.4 61.4 L 564.6 81.1 L 487.7 41.8 L 349.2 41.8 L 164.5 41.8 L 56.8 41.8 Z"/></svg>
+    <button class="rmap-pin" style="left:51.89%;top:19.48%" data-i="0" aria-label="St. Benedict / St. John's"></button>
+    <button class="rmap-pin" style="left:52.12%;top:30.31%" data-i="1" aria-label="Iowa Central"></button>
+    <button class="rmap-pin" style="left:90.16%;top:26.93%" data-i="2" aria-label="University of New England"></button>
+    <button class="rmap-pin" style="left:82.25%;top:38.96%" data-i="3" aria-label="Eastern University"></button>
+    <button class="rmap-pin" style="left:35.06%;top:43.21%" data-i="4" aria-label="Air Force"></button>
+    <button class="rmap-pin" style="left:5.55%;top:22.05%" data-i="5" aria-label="Western Oregon"></button>
+    <button class="rmap-pin" style="left:68.37%;top:32.42%" data-i="6" aria-label="Adrian College"></button>
+    <button class="rmap-pin" style="left:78.68%;top:27.99%" data-i="7" aria-label="Nazareth University"></button>
+    <button class="rmap-pin" style="left:75.89%;top:47.08%" data-i="8" aria-label="Southern Virginia University"></button>
+    <button class="rmap-pin" style="left:78.39%;top:31.19%" data-i="9" aria-label="Alfred University"></button>
+    <button class="rmap-pin" style="left:75.18%;top:52.92%" data-i="10" aria-label="Guilford College"></button>
+    <button class="rmap-pin" style="left:87.80%;top:31.89%" data-i="11" aria-label="Nichols College"></button>
+    <button class="rmap-pin" style="left:20.36%;top:14.94%" data-i="12" aria-label="University of Montana"></button>
+    <button class="rmap-pin" style="left:84.50%;top:36.67%" data-i="13" aria-label="Long Island University"></button>
+    <button class="rmap-pin" style="left:84.53%;top:34.21%" data-i="14" aria-label="Army West Point"></button>
+    <button class="rmap-pin" style="left:73.69%;top:38.85%" data-i="15" aria-label="Wheeling University"></button>
+    <button class="rmap-pin" style="left:80.49%;top:42.69%" data-i="16" aria-label="United States Naval Academy"></button>
+    <button class="rmap-pin" style="left:58.05%;top:43.39%" data-i="17" aria-label="Lindenwood"></button>
+    <button class="rmap-pin" style="left:23.44%;top:62.13%" data-i="18" aria-label="Grand Canyon"></button>
+    <button class="rmap-pin" style="left:7.34%;top:46.73%" data-i="19" aria-label="St. Mary's"></button>
+    <button class="rmap-pin" style="left:65.76%;top:28.69%" data-i="20" aria-label="Davenport University"></button>
+    <button class="rmap-pin" style="left:6.75%;top:8.37%" data-i="21" aria-label="Western Washington"></button>
+    <button class="rmap-pin rmap-pin--intl" style="left:96%;top:34%" data-i="22" aria-label="Cardiff Met RFC">UK</button>
+    <div class="rmap-pop" id="rmapPop" hidden></div>
+  </div>
+  <p class="rmap-hint">Hover or tap a marker to see the program. Cardiff Met (Wales) shown as UK.</p>
+</div>
+<div class="rec-list">
+  <div class="rec-item"><span class="rec-name">St. Benedict / St. John's</span><span class="rec-loc">St. Joseph, MN</span></div>
+  <div class="rec-item"><span class="rec-name">Iowa Central</span><span class="rec-loc">Fort Dodge, IA</span></div>
+  <div class="rec-item"><span class="rec-name">University of New England</span><span class="rec-loc">Biddeford, ME</span></div>
+  <div class="rec-item"><span class="rec-name">Eastern University</span><span class="rec-loc">St. Davids, PA</span></div>
+  <div class="rec-item"><span class="rec-name">Air Force</span><span class="rec-loc">Colorado Springs, CO</span><span class="rec-rank">Men #19 D1A</span></div>
+  <div class="rec-item"><span class="rec-name">Western Oregon</span><span class="rec-loc">Monmouth, OR</span><span class="rec-rank">Men #14 NCR</span></div>
+  <div class="rec-item"><span class="rec-name">Adrian College</span><span class="rec-loc">Adrian, MI</span></div>
+  <div class="rec-item"><span class="rec-name">Nazareth University</span><span class="rec-loc">Rochester, NY</span></div>
+  <div class="rec-item"><span class="rec-name">Southern Virginia University</span><span class="rec-loc">Buena Vista, VA</span></div>
+  <div class="rec-item"><span class="rec-name">Alfred University</span><span class="rec-loc">Alfred, NY</span></div>
+  <div class="rec-item"><span class="rec-name">Guilford College</span><span class="rec-loc">Greensboro, NC</span></div>
+  <div class="rec-item"><span class="rec-name">Nichols College</span><span class="rec-loc">Dudley, MA</span></div>
+  <div class="rec-item"><span class="rec-name">University of Montana</span><span class="rec-loc">Missoula, MT</span><span class="rec-rank">Men #5 NCR DIII</span></div>
+  <div class="rec-item"><span class="rec-name">Long Island University</span><span class="rec-loc">Brooklyn, NY</span></div>
+  <div class="rec-item"><span class="rec-name">Army West Point</span><span class="rec-loc">West Point, NY</span><span class="rec-rank">Men #6 D1A, Women #4 NIRA D2</span></div>
+  <div class="rec-item"><span class="rec-name">Wheeling University</span><span class="rec-loc">Wheeling, WV</span><span class="rec-rank">Men #1 NCR 7s</span></div>
+  <div class="rec-item"><span class="rec-name">United States Naval Academy</span><span class="rec-loc">Annapolis, MD</span><span class="rec-rank">Men #2 D1A</span></div>
+  <div class="rec-item"><span class="rec-name">Lindenwood</span><span class="rec-loc">St. Charles, MO</span><span class="rec-rank">Men #6 D1A, Women #4 NIRA D2</span></div>
+  <div class="rec-item"><span class="rec-name">Grand Canyon</span><span class="rec-loc">Phoenix, AZ</span><span class="rec-rank">Men #10 D1A</span></div>
+  <div class="rec-item"><span class="rec-name">St. Mary's</span><span class="rec-loc">Moraga, CA</span><span class="rec-rank">Men #3 D1A, 2025 National Champions</span></div>
+  <div class="rec-item"><span class="rec-name">Davenport University</span><span class="rec-loc">Grand Rapids, MI</span><span class="rec-rank">Men #14 D1A</span></div>
+  <div class="rec-item"><span class="rec-name">Western Washington</span><span class="rec-loc">Bellingham, WA</span><span class="rec-rank">2026 National Champions D1AA</span></div>
+  <div class="rec-item"><span class="rec-name">Cardiff Met RFC</span><span class="rec-loc">Cardiff, Wales</span><span class="rec-rank">BUCS #6, WRU #12</span></div>
+</div>
+<script>window.GNC_RECRUITERS=[{"n": "St. Benedict / St. John's", "l": "St. Joseph, MN", "r": ""}, {"n": "Iowa Central", "l": "Fort Dodge, IA", "r": ""}, {"n": "University of New England", "l": "Biddeford, ME", "r": ""}, {"n": "Eastern University", "l": "St. Davids, PA", "r": ""}, {"n": "Air Force", "l": "Colorado Springs, CO", "r": "Men #19 D1A"}, {"n": "Western Oregon", "l": "Monmouth, OR", "r": "Men #14 NCR"}, {"n": "Adrian College", "l": "Adrian, MI", "r": ""}, {"n": "Nazareth University", "l": "Rochester, NY", "r": ""}, {"n": "Southern Virginia University", "l": "Buena Vista, VA", "r": ""}, {"n": "Alfred University", "l": "Alfred, NY", "r": ""}, {"n": "Guilford College", "l": "Greensboro, NC", "r": ""}, {"n": "Nichols College", "l": "Dudley, MA", "r": ""}, {"n": "University of Montana", "l": "Missoula, MT", "r": "Men #5 NCR DIII"}, {"n": "Long Island University", "l": "Brooklyn, NY", "r": ""}, {"n": "Army West Point", "l": "West Point, NY", "r": "Men #6 D1A, Women #4 NIRA D2"}, {"n": "Wheeling University", "l": "Wheeling, WV", "r": "Men #1 NCR 7s"}, {"n": "United States Naval Academy", "l": "Annapolis, MD", "r": "Men #2 D1A"}, {"n": "Lindenwood", "l": "St. Charles, MO", "r": "Men #6 D1A, Women #4 NIRA D2"}, {"n": "Grand Canyon", "l": "Phoenix, AZ", "r": "Men #10 D1A"}, {"n": "St. Mary's", "l": "Moraga, CA", "r": "Men #3 D1A, 2025 National Champions"}, {"n": "Davenport University", "l": "Grand Rapids, MI", "r": "Men #14 D1A"}, {"n": "Western Washington", "l": "Bellingham, WA", "r": "2026 National Champions D1AA"}, {"n": "Cardiff Met RFC", "l": "Cardiff, Wales", "r": "BUCS #6, WRU #12"}];</script>
     </div>
   </section>
 </main>
@@ -181,7 +224,7 @@
   </div>
 </div>
 
-<script src="js/main.js?v=1787774447b"></script>
-<script src="js/hero-sequence.js?v=1787774447b"></script>
+<script src="js/main.js?v=1787774953b"></script>
+<script src="js/hero-sequence.js?v=1787774953b"></script>
 </body>
 </html>

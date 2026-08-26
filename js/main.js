@@ -238,3 +238,33 @@ document.addEventListener("DOMContentLoaded", function () {
     if (e.key === "Escape" && modal.classList.contains("is-open")) closeModal();
   });
 });
+
+/* ---------- College recruiter map ---------- */
+document.addEventListener("DOMContentLoaded", function () {
+  var map = document.getElementById("rmap");
+  if (!map || !window.GNC_RECRUITERS) return;
+  var pop = document.getElementById("rmapPop");
+  var data = window.GNC_RECRUITERS;
+  var active = null;
+  function show(pin) {
+    var d = data[+pin.getAttribute("data-i")];
+    if (!d) return;
+    pop.innerHTML = '<span class="rp-name"></span><span class="rp-loc"></span>' + (d.r ? '<span class="rp-rank"></span>' : '');
+    pop.querySelector(".rp-name").textContent = d.n;
+    pop.querySelector(".rp-loc").textContent = d.l;
+    if (d.r) pop.querySelector(".rp-rank").textContent = d.r;
+    pop.style.left = pin.style.left;
+    pop.style.top = pin.style.top;
+    pop.hidden = false;
+    if (active) active.classList.remove("active");
+    pin.classList.add("active"); active = pin;
+  }
+  function hide() { pop.hidden = true; if (active) { active.classList.remove("active"); active = null; } }
+  map.querySelectorAll(".rmap-pin").forEach(function (p) {
+    p.addEventListener("mouseenter", function () { show(p); });
+    p.addEventListener("focus", function () { show(p); });
+    p.addEventListener("click", function (e) { e.preventDefault(); show(p); });
+  });
+  map.addEventListener("mouseleave", hide);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") hide(); });
+});
