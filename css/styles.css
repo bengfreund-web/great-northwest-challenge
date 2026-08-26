@@ -1912,3 +1912,24 @@ a.card-link:hover { text-decoration: underline; }
 .gallery-grid img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius); display: block; }
 @media (max-width: 800px) { .gallery-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 460px) { .gallery-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Team Interest popup modal ---------- */
+.ti-modal { position: fixed; inset: 0; z-index: 300; display: none; }
+.ti-modal.is-open { display: block; }
+.ti-modal-overlay { position: absolute; inset: 0; background: rgba(0, 40, 48, 0.62); }
+.ti-modal-panel {
+  position: relative; width: min(680px, 94vw); height: min(860px, 90vh);
+  margin: 5vh auto 0; background: var(--white); border-radius: var(--radius);
+  overflow: hidden; box-shadow: 0 24px 70px rgba(0, 0, 0, 0.4); display: flex;
+}
+.ti-modal iframe { width: 100%; height: 100%; border: 0; display: block; }
+.ti-modal-close {
+  position: absolute; top: 10px; right: 12px; z-index: 2; width: 38px; height: 38px;
+  border-radius: 50%; border: none; background: var(--primary); color: #fff;
+  font-size: 1.5rem; line-height: 1; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+.ti-modal-close:hover { background: var(--primary-dark); }
+body.ti-lock { overflow: hidden; }
+@media (max-width: 600px) {
+  .ti-modal-panel { width: 100vw; height: 100vh; margin: 0; border-radius: 0; }
+}

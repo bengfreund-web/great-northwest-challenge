@@ -210,3 +210,31 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+/* ---------- Team Interest popup ---------- */
+document.addEventListener("DOMContentLoaded", function () {
+  var modal = document.getElementById("tiModal");
+  if (!modal) return;
+  var frame = modal.querySelector("iframe");
+  function openModal(e) {
+    if (e) e.preventDefault();
+    if (frame && !frame.getAttribute("src")) frame.setAttribute("src", frame.getAttribute("data-src"));
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("ti-lock");
+  }
+  function closeModal() {
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("ti-lock");
+  }
+  document.querySelectorAll("[data-team-interest]").forEach(function (el) {
+    el.addEventListener("click", openModal);
+  });
+  modal.querySelectorAll("[data-ti-close]").forEach(function (el) {
+    el.addEventListener("click", closeModal);
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modal.classList.contains("is-open")) closeModal();
+  });
+});

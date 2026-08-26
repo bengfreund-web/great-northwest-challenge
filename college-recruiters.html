@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=1787773232b">
+<link rel="stylesheet" href="css/styles.css?v=1787774447b">
 <script>document.documentElement.className += " js";</script>
 </head>
 <body>
@@ -51,7 +51,7 @@
       <div class="nav-item">
         <button class="nav-drop-toggle" aria-expanded="false">Tournament</button>
         <div class="nav-drop">
-          <a href="team-interest.html">Team Interest</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTl5DZF21dP4FiCC82ohGkLK4kZoKW5X2aRMUZjILlYgGOSA/viewform" target="_blank" rel="noopener" data-team-interest>Team Interest</a>
           <a href="confirmed-teams.html">Confirmed Teams</a>
           <a href="payment.html">Payment Links</a>
           <a href="college-recruiters.html">College Recruiters</a>
@@ -72,7 +72,7 @@
           <a href="contact.html">Contact</a>
         </div>
       </div>
-      <a class="nav-cta" href="team-interest.html">Team Interest</a>
+      <a class="nav-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSfTl5DZF21dP4FiCC82ohGkLK4kZoKW5X2aRMUZjILlYgGOSA/viewform" target="_blank" rel="noopener" data-team-interest>Team Interest</a>
     </nav>
   </div>
 </header>
@@ -145,7 +145,7 @@
     <div class="footer-col">
       <h3>Tournament</h3>
       <ul>
-        <li><a href="team-interest.html">Team Interest</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfTl5DZF21dP4FiCC82ohGkLK4kZoKW5X2aRMUZjILlYgGOSA/viewform" target="_blank" rel="noopener" data-team-interest>Team Interest</a></li>
         <li><a href="confirmed-teams.html">Confirmed Teams</a></li>
         <li><a href="payment.html">Payment Links</a></li>
         <li><a href="college-recruiters.html">College Recruiters</a></li>
@@ -173,7 +173,15 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=1787773232b"></script>
-<script src="js/hero-sequence.js?v=1787773232b"></script>
+<div class="ti-modal" id="tiModal" aria-hidden="true">
+  <div class="ti-modal-overlay" data-ti-close></div>
+  <div class="ti-modal-panel" role="dialog" aria-modal="true" aria-label="Team interest form">
+    <button class="ti-modal-close" type="button" data-ti-close aria-label="Close">&times;</button>
+    <iframe data-src="https://docs.google.com/forms/d/e/1FAIpQLSfTl5DZF21dP4FiCC82ohGkLK4kZoKW5X2aRMUZjILlYgGOSA/viewform?embedded=true" title="Team interest form" loading="lazy"></iframe>
+  </div>
+</div>
+
+<script src="js/main.js?v=1787774447b"></script>
+<script src="js/hero-sequence.js?v=1787774447b"></script>
 </body>
 </html>
