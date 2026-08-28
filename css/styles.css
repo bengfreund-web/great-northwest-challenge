@@ -1968,3 +1968,13 @@ body.ti-lock { overflow: hidden; }
 .team-poster img { width: 100%; height: auto; display: block; }
 .team-poster figcaption { padding: 10px 12px; font-weight: 700; color: var(--primary); text-align: center; font-size: 0.9rem; letter-spacing: 0.01em; }
 @media (max-width: 520px) { .team-poster-grid { grid-template-columns: 1fr 1fr; gap: 12px; } }
+
+/* ---------- Recruiter logos (map popup + list) ---------- */
+.rmap-pop .rp-logo { display: block; width: 76px; height: 52px; margin: 0 auto 8px; padding: 6px 8px;
+  background: #fff; border-radius: 6px; object-fit: contain; }
+.rmap-pop { text-align: center; }
+.rec-item { display: flex; align-items: center; gap: 12px; }
+.rec-logo { flex: 0 0 auto; width: 52px; height: 40px; object-fit: contain;
+  background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 4px; }
+.rec-logo--none { background: var(--off-white); }
+.rec-text { display: flex; flex-direction: column; min-width: 0; }
