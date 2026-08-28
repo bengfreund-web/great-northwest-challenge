@@ -1936,7 +1936,7 @@ body.ti-lock { overflow: hidden; }
 
 /* ---------- College recruiter interactive map ---------- */
 .rmap-wrap { margin-top: 2.25rem; }
-.rmap { position: relative; width: 100%; max-width: 960px; margin: 0 auto; aspect-ratio: 960 / 560;
+.rmap { position: relative; width: 100%; max-width: 960px; margin: 0 auto; aspect-ratio: 960 / 520;
   background: var(--off-white); border: 1px solid var(--line); border-radius: var(--radius); }
 .rmap-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
 .rmap-svg path { fill: rgba(0, 84, 98, 0.08); stroke: var(--primary); stroke-width: 1.5; stroke-linejoin: round; }
