@@ -1961,3 +1961,10 @@ body.ti-lock { overflow: hidden; }
 .rec-rank { display: block; font-size: 0.78rem; color: var(--accent-text); font-weight: 600; margin-top: 3px; }
 @media (max-width: 820px) { .rec-list { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .rec-list { grid-template-columns: 1fr; } .rmap-pin { width: 20px; height: 20px; } }
+
+/* ---------- 2026 team commitment poster gallery ---------- */
+.team-poster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 16px; margin-top: 2rem; }
+.team-poster { margin: 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--white); box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.team-poster img { width: 100%; height: auto; display: block; }
+.team-poster figcaption { padding: 10px 12px; font-weight: 700; color: var(--primary); text-align: center; font-size: 0.9rem; letter-spacing: 0.01em; }
+@media (max-width: 520px) { .team-poster-grid { grid-template-columns: 1fr 1fr; gap: 12px; } }
