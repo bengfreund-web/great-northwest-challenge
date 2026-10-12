@@ -1978,3 +1978,10 @@ body.ti-lock { overflow: hidden; }
   background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 4px; }
 .rec-logo--none { background: var(--off-white); }
 .rec-text { display: flex; flex-direction: column; min-width: 0; }
+
+/* ---------- Division availability badges on team cards ---------- */
+.conf-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 0.7em; padding-bottom: 0.5em; border-bottom: 1px solid var(--line); }
+.conf-head h3 { margin: 0; padding: 0; border: 0; }
+.avail-badge { font: 700 0.63rem/1 var(--font-sans); letter-spacing: 0.05em; text-transform: uppercase; padding: 5px 9px; border-radius: 999px; white-space: nowrap; }
+.avail-badge.is-full { background: var(--primary); color: #fff; }
+.avail-badge.is-open { background: var(--accent); color: #fff; }
