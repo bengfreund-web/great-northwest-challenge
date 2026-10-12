@@ -2010,3 +2010,8 @@ body.ti-lock { overflow: hidden; }
 .nav-drop-group + a { margin-top: 0; }
 .nav-drop .nav-drop-group:not(:first-child) { border-top: 1px solid var(--line); margin-top: 5px; padding-top: 11px; }
 @media (max-width: 880px) { .nav-drop-group { color: var(--gray); } }
+
+/* ---------- Team logos in slots ---------- */
+.slot-logo { width: 22px; height: 22px; object-fit: contain; flex: 0 0 auto; }
+.slot.filled.has-logo::before { content: none; }
+.slot.filled.has-logo { padding-left: 9px; }
