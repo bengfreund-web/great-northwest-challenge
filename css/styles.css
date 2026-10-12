@@ -2004,3 +2004,9 @@ body.ti-lock { overflow: hidden; }
   font: 700 0.72rem/1 var(--font-sans); letter-spacing: 0.06em; text-transform: uppercase; color: var(--primary);
   background: rgba(0, 84, 98, 0.08); border-radius: 8px; }
 .slot-lock svg { width: 13px; height: 13px; }
+
+/* ---------- Grouped Tournament dropdown ---------- */
+.nav-drop-group { margin: 0; padding: 9px 16px 3px; font: 700 0.6rem/1 var(--font-sans); letter-spacing: 0.09em; text-transform: uppercase; color: var(--accent-text); }
+.nav-drop-group + a { margin-top: 0; }
+.nav-drop .nav-drop-group:not(:first-child) { border-top: 1px solid var(--line); margin-top: 5px; padding-top: 11px; }
+@media (max-width: 880px) { .nav-drop-group { color: var(--gray); } }
