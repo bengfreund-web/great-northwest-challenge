@@ -32,7 +32,7 @@ U16 Boys D1/D2). Confirmed teams are 2026 state/regional sides by division.
 4. **Hero video** is the reused Bozeman flyover (native GNC footage). Higher-res reel welcome.
 5. **Subpages not yet built** (exist on the live Squarespace site): College Recruiters, Vendors &
    Partners, Tournament Packet, Player Age Bands, USA Rugby TiD Day, Fixtures & Results, Venue.
-6. Contact: Tournament Director JD Stephenson jstephenson@montanainstituteofsport.org / (314) 954-7194;
+6. Contact: Allison Schrichte (Tournament Coordinator) allison@sportmontana.org / (406) 241-1480;
    Coordinator Allison Schrichte aschrichte@montanarugby.org / (406) 241-1480.
 
 ## Deploy

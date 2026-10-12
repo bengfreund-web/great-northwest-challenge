@@ -16,7 +16,7 @@ var FORM_ENDPOINT = "";
    relabels itself. While this is empty they both fall back to email,
    so neither is ever a dead control.
    ------------------------------------------------------------------ */
-var INTEREST_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfcyxtvMmibKBIx5zs8umNMJHdaSRjgLyagau2Ux55LMOSFIw/viewform";
+var INTEREST_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfcyxtvMmibKBIx5zs8umNMJHdaSRjgLyagau2Ux55LMOSFIw/viewform?hl=en";
 
 /* ------------------------------------------------------------------
    Confirmed / Who's Coming — the team wall.

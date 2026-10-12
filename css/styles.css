@@ -1985,3 +1985,22 @@ body.ti-lock { overflow: hidden; }
 .avail-badge { font: 700 0.63rem/1 var(--font-sans); letter-spacing: 0.05em; text-transform: uppercase; padding: 5px 9px; border-radius: 999px; white-space: nowrap; }
 .avail-badge.is-full { background: var(--primary); color: #fff; }
 .avail-badge.is-open { background: var(--accent); color: #fff; }
+
+/* ---------- Division slot grid (exclusivity / urgency) ---------- */
+.conf-card.is-full { border-top-color: var(--primary); }
+.slot-grid { display: grid; gap: 7px; margin-top: 2px; }
+.slot { display: flex; align-items: center; gap: 9px; padding: 9px 11px; border-radius: 8px; font-size: 0.9rem; }
+.slot.filled { background: rgba(0, 84, 98, 0.06); color: var(--ink); }
+.slot.filled::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--primary); flex: 0 0 auto; }
+.slot-team { font-weight: 600; }
+.slot.open { background: var(--accent); color: #fff; text-decoration: none; justify-content: space-between; font-weight: 700;
+  box-shadow: 0 0 0 0 rgba(240, 138, 30, 0.5); animation: slotpulse 2.2s ease-out infinite; }
+.slot.open:hover, .slot.open:focus { filter: brightness(1.06); outline: none; }
+.slot-open-label { letter-spacing: 0.02em; }
+.slot-open-cta { font-size: 0.8rem; font-weight: 600; opacity: 0.95; }
+@keyframes slotpulse { 0% { box-shadow: 0 0 0 0 rgba(240,138,30,0.5); } 70% { box-shadow: 0 0 0 9px rgba(240,138,30,0); } 100% { box-shadow: 0 0 0 0 rgba(240,138,30,0); } }
+@media (prefers-reduced-motion: reduce) { .slot.open { animation: none; } }
+.slot-lock { display: flex; align-items: center; justify-content: center; gap: 7px; margin-top: 10px; padding: 9px;
+  font: 700 0.72rem/1 var(--font-sans); letter-spacing: 0.06em; text-transform: uppercase; color: var(--primary);
+  background: rgba(0, 84, 98, 0.08); border-radius: 8px; }
+.slot-lock svg { width: 13px; height: 13px; }
