@@ -2018,3 +2018,10 @@ body.ti-lock { overflow: hidden; }
 
 /* slot logo chips: white background so every crest reads consistently */
 .slot-logo { width: 26px; height: 26px; background: #fff; border: 1px solid var(--line); border-radius: 5px; padding: 2px; }
+
+/* ---------- Footer social icons ---------- */
+.footer-social { margin: 1.1rem 0 0; display: flex; gap: 10px; }
+.footer-social a { display: inline-flex; width: 38px; height: 38px; align-items: center; justify-content: center;
+  border-radius: 9px; color: #fff; background: rgba(255,255,255,0.12); transition: background .15s ease; }
+.footer-social a:hover, .footer-social a:focus { background: var(--accent); }
+.footer-social svg { width: 20px; height: 20px; }
